@@ -10,9 +10,13 @@ import UIKit
 
 class UpdatedViewController : UIViewController
 {
+    @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var bottomImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Load this pages components.
+        topImage.image = UIImage(named: "focusbig")
     }
     
 }

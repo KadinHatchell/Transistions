@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -32,23 +32,38 @@
             </objects>
             <point key="canvasLocation" x="-323" y="444"/>
         </scene>
-        <!--View Controller-->
+        <!--Updated View Controller-->
         <scene sceneID="jLG-np-pLt">
             <objects>
-                <viewController id="KzT-Wy-TH3" sceneMemberID="viewController">
+                <viewController id="KzT-Wy-TH3" customClass="UpdatedViewController" customModule="Transistions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B3d-er-Uan"/>
                         <viewControllerLayoutGuide type="bottom" id="pRU-of-6K3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Vv-kI-30l">
+                    <view key="view" contentMode="scaleAspectFit" id="0Vv-kI-30l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yog-xO-yjL">
+                                <rect key="frame" x="180" y="452" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rexfeatures_372078p" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-bw-SkM">
+                                <rect key="frame" x="73" y="20" width="454" height="310"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.028106128130000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="yog-xO-yjL" id="C9M-g5-eQO"/>
+                        <outlet property="topImage" destination="xAu-bw-SkM" id="tUk-Ep-qNR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Me6-4L-u3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="387" y="503"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rexfeatures_372078p" width="618" height="600"/>
+    </resources>
 </document>
